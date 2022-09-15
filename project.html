@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Day 4</title>
+        <link rel="stylesheet" href="styles/project.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar-left">
+                <ul>
+                    <li>
+                        <img src="assets/image/logo.png" alt="Logo">
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div style="background-color: #d7ddde;">
+            <form onsubmit="addData(event)">
+                <h2>ADD MY PROJECT</h2>
+                <div>
+                    <label for="input-name">Project Name</label>
+                    <input class="input-name" type="text" id="input-name"
+                        required>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div style="margin-right: 15px">
+                                <label for="start-date">Start Date</label><br>
+                                <input class="date-input" type="date"
+                                    id="start-date">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <label for="end-date">End Date</label><br>
+                                <input class="date-input" type="date"
+                                    id="end-date">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <label for="desc">Description</label>
+                    <textarea name="" id="desc" cols="40" rows="4"></textarea>
+                </div>
+                <div>
+                    <p>Technologies</p>
+                    <table style="margin: -20px 0 0 -15px;">
+                        <tr>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="" id="Node Js"/>Node Js
+                            </td>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="" id="Next Js"/>Next Js
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="" id="React Js"/>React Js
+                            </td>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="" id="Type"/>TypeScript
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+
+                <div>
+                    <label for="img">Upload Image</label>
+                    <input type="file" class="upload-img" id="img"
+                        style="background-color: white; display:'flex';
+                        align-item:'center'">
+                </div>
+                <div>
+                    <button class="button">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>MY PROJECT</h2>
+            <div id="card" style="display: flex; justify-content:center;
+                flex-wrap:wrap">
+                <div class="card">
+                    <div>
+                        <img style="
+                            width: 100%;
+                            border-radius: 10px;
+                            " src="assets/image/code.jpg" alt="code">
+                        <div class="card-text">
+                            <h3>Dumbways</h3>
+                            <p>Durasi: 3 bln</p>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                            Ratione, commodi?</p>
+                        <div>
+                            <img style="width:25px;margin:0 10px 10px 0"
+                                src="assets/image/linkedin.png"
+                                alt="icon">
+                            <img style="width:25px;margin:0 10px 10px 0"
+                                src="assets/image/instagram.png"
+                                alt="icon">
+                            <img style="width:25px;margin:0 10px 10px 0"
+                                src="assets/image/facebook.png"
+                                alt="icon">
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content:center">
+                        <button class="button-edit">Edit</button>
+                        <button class="button-delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="data/TechnologyData.js"></script>
+        <script src="scripts/components/Technology.js"></script>
+        <script src="scripts/components/project.js"></script>
+    </body>
+</html>
