@@ -3,6 +3,10 @@
     <head>
         <title>Day 4</title>
         <link rel="stylesheet" href="styles/project.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <nav>
@@ -61,21 +65,21 @@
                         <tr>
                             <td>
                                 <input class="tech-input" type="checkbox"
-                                    value="" id="Node Js"/>Node Js
+                                    value="node-js" id="node-js"/>Node Js
                             </td>
                             <td>
                                 <input class="tech-input" type="checkbox"
-                                    value="" id="Next Js"/>Next Js
+                                    value="laravel" id="laravel"/>Laravel
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <input class="tech-input" type="checkbox"
-                                    value="" id="React Js"/>React Js
+                                    value="react" id="react"/>React Js
                             </td>
                             <td>
                                 <input class="tech-input" type="checkbox"
-                                    value="" id="Type"/>TypeScript
+                                    value="golang" id="go"/>Golang
                             </td>
                         </tr>
                     </table>
@@ -86,8 +90,8 @@
                 <div>
                     <label for="img">Upload Image</label>
                     <input type="file" class="upload-img" id="img"
-                        style="background-color: white; display:'flex';
-                        align-item:'center'">
+                        style="background-color: white; display:'flex';"
+                        required>
                 </div>
                 <div>
                     <button class="button">Submit</button>
@@ -114,16 +118,11 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit.
                             Ratione, commodi?</p>
-                        <div>
-                            <img style="width:25px;margin:0 10px 10px 0"
-                                src="assets/image/linkedin.png"
-                                alt="icon">
-                            <img style="width:25px;margin:0 10px 10px 0"
-                                src="assets/image/instagram.png"
-                                alt="icon">
-                            <img style="width:25px;margin:0 10px 10px 0"
-                                src="assets/image/facebook.png"
-                                alt="icon">
+                        <div style="margin-bottom: 10px;">
+                            <i class="fa-brands fa-xl fa-node-js" size:20px></i>
+                            <i class="fa-brands fa-xl fa-laravel"></i>
+                            <i class="fa-brands fa-xl fa-react"></i>
+                            <i class="fa-brands fa-xl fa-golang"></i>
                         </div>
                     </div>
                     <div style="display: flex; justify-content:center">
@@ -134,9 +133,6 @@
             </div>
         </div>
 
-
-        <script src="data/TechnologyData.js"></script>
-        <script src="scripts/components/Technology.js"></script>
         <script src="scripts/components/project.js"></script>
     </body>
 </html>
